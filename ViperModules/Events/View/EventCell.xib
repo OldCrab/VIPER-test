@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="KGk-i7-Jjw" customClass="EventCell" customModule="Wishlist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Hqj-kc-Dej"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vE-jc-emn">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="F85-8M-gHH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uu-Mz-JoF" customClass="StylizedLabel" customModule="Wishlist" customModuleProvider="target">
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.57254901960000004" blue="0.78823529410000004" alpha="0.59701412669999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="QYO-5S-M2d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Uu-Mz-JoF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="08E-aP-PE3"/>
+                    <constraint firstItem="Hqj-kc-Dej" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6aF-ht-pNb"/>
+                    <constraint firstItem="Hqj-kc-Dej" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="72e-I0-3Pn"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Uu-Mz-JoF" secondAttribute="trailing" constant="10" id="KId-cr-iHf"/>
+                    <constraint firstItem="8Uu-Mz-JoF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LAN-Dy-0kB"/>
+                    <constraint firstItem="5vE-jc-emn" firstAttribute="top" secondItem="8Uu-Mz-JoF" secondAttribute="bottom" constant="6" id="Mw2-BT-wnK"/>
+                    <constraint firstAttribute="trailing" secondItem="Hqj-kc-Dej" secondAttribute="trailing" id="QKc-aL-pKj"/>
+                    <constraint firstItem="5vE-jc-emn" firstAttribute="top" secondItem="Hqj-kc-Dej" secondAttribute="bottom" id="UJG-l0-U0b"/>
+                    <constraint firstItem="5vE-jc-emn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W99-Jl-taG"/>
+                    <constraint firstAttribute="bottom" secondItem="5vE-jc-emn" secondAttribute="bottom" id="b9H-kZ-zEw"/>
+                    <constraint firstAttribute="trailing" secondItem="5vE-jc-emn" secondAttribute="trailing" id="gSG-fe-iFL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="briefDescription" destination="8Uu-Mz-JoF" id="Rna-uI-iLi"/>
+                <outlet property="eventImageView" destination="Hqj-kc-Dej" id="cr8-gV-d7N"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-31"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="75" height="90"/>
+    </resources>
+</document>

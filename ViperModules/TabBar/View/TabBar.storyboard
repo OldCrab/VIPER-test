@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8EA-Ep-a7o">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabbar View Controller-->
+        <scene sceneID="Zd6-X8-U0e">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4AK-oM-Qmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="HUP-Uz-oFq" customClass="TabBarModuleInitializer" customModule="Wishlist" customModuleProvider="target">
+                    <connections>
+                        <outlet property="tabbarViewController" destination="8EA-Ep-a7o" id="kaq-1l-mxq"/>
+                    </connections>
+                </customObject>
+                <tabBarController id="8EA-Ep-a7o" customClass="TabBarViewController" customModule="Wishlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KTy-2L-UJS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-2014" y="-1662"/>
+        </scene>
+    </scenes>
+</document>

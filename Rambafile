@@ -1,0 +1,34 @@
+### Headers settings
+company: CIP
+
+### Xcode project settings
+project_name: Wishlist
+xcodeproj_path: Wishlist.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Wishlist
+
+# The file path for new modules
+project_file_path: ViperModules
+
+# The Xcode group path to new modules
+project_group_path: ViperModules
+
+### Tests generation settings section
+# The tests target name
+test_target: WishlistTests
+
+# The file path for new tests
+test_file_path: ViperModulesTest
+
+# The Xcode group path to new tests
+test_group_path: ViperModulesTest
+
+### Dependencies settings section
+podfile_path: n
+
+### Templates
+### Templates
+templates:
+- {name: swifty_viper}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="Wishlist" customModuleProvider="target">
+            <connections>
+                <outlet property="passField" destination="Rky-KQ-uf2" id="3ip-e6-Irv"/>
+                <outlet property="passwordConfirmationField" destination="raB-2Y-Kqi" id="rp3-hr-ycR"/>
+                <outlet property="phoneField" destination="8Cc-xx-4wv" id="JeC-hC-FMQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="LFs-Dd-fGM"/>
+                <outletCollection property="requiredTextFields" destination="8Cc-xx-4wv" collectionClass="NSMutableArray" id="55F-3g-eo0"/>
+                <outletCollection property="requiredTextFields" destination="raB-2Y-Kqi" collectionClass="NSMutableArray" id="gzJ-rL-uTt"/>
+                <outletCollection property="requiredTextFields" destination="Rky-KQ-uf2" collectionClass="NSMutableArray" id="fbV-x2-zXS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3N-b9-5mh" customClass="TPKeyboardAvoidingScrollView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AuthenticationBackground" translatesAutoresizingMaskIntoConstraints="NO" id="FQN-a1-KCY"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVE-Z3-8jW" userLabel="RegistrationView">
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Cc-xx-4wv" customClass="AuthTextField" customModule="Wishlist" customModuleProvider="target">
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="8ta-QS-ZB9"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rky-KQ-uf2" customClass="AuthTextField" customModule="Wishlist" customModuleProvider="target">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="6Kh-Cf-B7S"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="raB-2Y-Kqi" customClass="AuthTextField" customModule="Wishlist" customModuleProvider="target">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="e4h-Eg-1Q9"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMV-4A-JTb">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="AEd-hR-HjL"/>
+                                        <constraint firstAttribute="width" secondItem="pMV-4A-JTb" secondAttribute="height" multiplier="157:274" id="kHN-rB-Tc1"/>
+                                    </constraints>
+                                    <state key="normal" image="fingerprint"/>
+                                    <connections>
+                                        <action selector="signUp" destination="-1" eventType="touchUpInside" id="wHw-MW-M4f"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Rky-KQ-uf2" firstAttribute="top" secondItem="8Cc-xx-4wv" secondAttribute="bottom" constant="12" id="7Sq-AE-2mu"/>
+                                <constraint firstItem="raB-2Y-Kqi" firstAttribute="leading" secondItem="lVE-Z3-8jW" secondAttribute="leading" constant="12" id="9qE-V2-NPp"/>
+                                <constraint firstItem="8Cc-xx-4wv" firstAttribute="top" secondItem="lVE-Z3-8jW" secondAttribute="top" constant="12" id="IZB-kS-Sbs"/>
+                                <constraint firstItem="pMV-4A-JTb" firstAttribute="centerX" secondItem="lVE-Z3-8jW" secondAttribute="centerX" id="Ni6-bz-ILf"/>
+                                <constraint firstAttribute="trailing" secondItem="raB-2Y-Kqi" secondAttribute="trailing" constant="12" id="VP1-1a-oNA"/>
+                                <constraint firstAttribute="trailing" secondItem="Rky-KQ-uf2" secondAttribute="trailing" constant="12" id="XEK-EM-Ua1"/>
+                                <constraint firstItem="Rky-KQ-uf2" firstAttribute="leading" secondItem="lVE-Z3-8jW" secondAttribute="leading" constant="12" id="bhV-WK-LdM"/>
+                                <constraint firstAttribute="height" constant="260" id="fkb-E1-FsN"/>
+                                <constraint firstAttribute="bottom" secondItem="pMV-4A-JTb" secondAttribute="bottom" id="jvu-W8-6Uv"/>
+                                <constraint firstAttribute="trailing" secondItem="8Cc-xx-4wv" secondAttribute="trailing" constant="12" id="kbC-hf-jRV"/>
+                                <constraint firstItem="8Cc-xx-4wv" firstAttribute="leading" secondItem="lVE-Z3-8jW" secondAttribute="leading" constant="12" id="mnr-W5-eko"/>
+                                <constraint firstItem="raB-2Y-Kqi" firstAttribute="top" secondItem="Rky-KQ-uf2" secondAttribute="bottom" constant="12" id="sys-ny-LnE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lVE-Z3-8jW" secondAttribute="trailing" constant="27" id="1M8-12-6Nw"/>
+                        <constraint firstAttribute="trailing" secondItem="FQN-a1-KCY" secondAttribute="trailing" id="27c-US-qf6"/>
+                        <constraint firstItem="FQN-a1-KCY" firstAttribute="leading" secondItem="X3N-b9-5mh" secondAttribute="leading" id="A8c-eV-uMX"/>
+                        <constraint firstAttribute="bottom" secondItem="FQN-a1-KCY" secondAttribute="bottom" id="Dx5-Rw-bqE"/>
+                        <constraint firstItem="FQN-a1-KCY" firstAttribute="top" secondItem="X3N-b9-5mh" secondAttribute="top" id="H3Z-5U-Ndb"/>
+                        <constraint firstItem="lVE-Z3-8jW" firstAttribute="leading" secondItem="X3N-b9-5mh" secondAttribute="leading" constant="27" id="Kml-sa-gln"/>
+                        <constraint firstItem="FQN-a1-KCY" firstAttribute="centerX" secondItem="X3N-b9-5mh" secondAttribute="centerX" id="ZQC-fS-IbJ"/>
+                        <constraint firstItem="lVE-Z3-8jW" firstAttribute="centerY" secondItem="X3N-b9-5mh" secondAttribute="centerY" id="tDC-pF-tkK"/>
+                        <constraint firstItem="FQN-a1-KCY" firstAttribute="centerY" secondItem="X3N-b9-5mh" secondAttribute="centerY" id="vVB-Da-AuV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="X3N-b9-5mh" secondAttribute="trailing" id="Boq-Fe-XQT"/>
+                <constraint firstItem="X3N-b9-5mh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Oso-Ug-npX"/>
+                <constraint firstAttribute="bottom" secondItem="X3N-b9-5mh" secondAttribute="bottom" id="Ym2-2K-qYq"/>
+                <constraint firstItem="X3N-b9-5mh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zRk-If-KGo"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+        <customObject id="lIg-Gb-HY0" customClass="RegistrationModuleInitializer" customModule="Wishlist" customModuleProvider="target">
+            <connections>
+                <outlet property="registrationViewController" destination="-1" id="tdu-mM-KfT"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="AuthenticationBackground" width="800" height="1420"/>
+        <image name="fingerprint" width="78" height="137"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsViewController" customModule="Wishlist" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="KlZ-84-Z7y" id="8Qw-j0-3Tf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DN5-y0-5z8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-84-Z7y">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KlZ-84-Z7y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Bq-cV-qW5"/>
+                <constraint firstAttribute="bottom" secondItem="KlZ-84-Z7y" secondAttribute="bottom" id="8ec-YB-POJ"/>
+                <constraint firstItem="KlZ-84-Z7y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dBE-N3-v01"/>
+                <constraint firstAttribute="trailing" secondItem="KlZ-84-Z7y" secondAttribute="trailing" id="q5T-oj-tVy"/>
+            </constraints>
+            <point key="canvasLocation" x="110.5" y="54.5"/>
+        </view>
+        <customObject id="bjv-I5-0kU" customClass="EventsModuleInitializer" customModule="Wishlist" customModuleProvider="target">
+            <connections>
+                <outlet property="eventsViewController" destination="-1" id="zND-ve-MG1"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
